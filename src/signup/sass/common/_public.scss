@@ -1,0 +1,22 @@
+@charset "UTF-8";
+body{ width: 100%; overflow-x: hidden; padding: 0px; margin: 0; background: #f2f2f2;}
+ol,ul{list-style: none;padding: 0px;margin: 0;}
+i,em{font-style: normal;}
+a{text-decoration: none;}
+table,tr,td,th{border-collapse: collapse;border-spacing:0;vertical-align: middle;}
+img,iframe{border:none;display: block;}
+textarea{resize: none;}
+h2{margin: 0;}
+input:focus, button:focus, select:focus,textarea:focus{outline: none;}
+$fontSize: 75;
+@function rem($n) {
+  @return ($n / $fontSize) * 1rem;
+}
+input{ padding: 0 rem(10);}
+.clear{ clear: both; overflow: hidden;}
+@mixin sanjiao($width) {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: rem($width);
+}
