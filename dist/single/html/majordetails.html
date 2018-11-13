@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>单招</title>
+	<meta name='apple-touch-fullscreen' content='yes'>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta content="fullscreen=yes,preventMove=no" name="ML-Config">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no,email=no,address=no" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+	<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<script src="../../script/public/flexible.js" type="text/javascript" charset="utf-8"></script>
+	
+</head>
+<body ontouchstart>
+
+	
+	<!-- header -->
+	<div class="header">
+		详细信息
+	</div>
+	<!-- header -->
+		<!-- banner -->
+	<div class="swiper-container">
+	  <div class="swiper-wrapper">
+	    <div class="swiper-slide"><img src="../images/banner.jpg" alt=""></div>
+	  </div>
+	</div>
+	<!-- banner -->
+		<!-- index search -->
+	<div class="index-search">
+		<div class="input">
+			<i class="iconfont icon-sousuo"></i>
+			<input type="search" placeholder="请输入关键词">
+		</div>
+		<div class="searchschool">搜学校</div>
+		<div class="searchmajor">搜专业</div>
+	</div>
+	<!-- index search -->
+	
+	<!-- gird -->
+	<div class="gird">
+		<div class="title">机械工程设计</div>
+		<table class="table">
+			<tr>
+				<td colspan="4">专业介绍文字，专业介绍文字，专业介绍文字，专业介绍
+文字，专业介绍文字，专业介绍文字，专业介绍文字，专
+业介绍文字，专业介绍文字</td>
+			</tr>
+			<tr>
+				<td width="35%">学校名称</td>
+				<td width="20%">招生人数</td>
+				<td width="15%">学费</td>
+				<td width="30%">考试时间<br>录取规则</td>
+			</tr>
+			<tr>
+				<td>湖南城建职业技术学院</td>
+				<td>50</td>
+				<td>4200</td>
+				<td>04/15~04/19机考+面试</td>
+			</tr>
+			<tr>
+				<td>湖南城建职业技术学院</td>
+				<td>50</td>
+				<td>4200</td>
+				<td>04/15~04/19机考+面试</td>
+			</tr>
+		</table>
+	</div>
+	<!-- gird -->
+	
+	<!-- link -->
+	<div class="link">
+		<a href="alumni.html" class="blue width_100">校友QQ群</a>
+	</div>
+	<!-- link -->
+<script src="../../script/public/jquery.min.js"></script>
+</body>
+</html>
+<script>
+  indexSearch()
+  function indexSearch(){
+	  $(".searchschool").on("touchend",function(e){
+		  const vaule = $(this).siblings(".input").find('input').val()
+		  alert(vaule)
+	  })
+	  $(".searchmajor").on("touchend",function(e){
+		  const vaule = $(this).siblings(".input").find('input').val()
+		  alert(vaule)
+	  })
+  }
+</script>	

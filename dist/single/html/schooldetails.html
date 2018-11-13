@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>单招</title>
+	<meta name='apple-touch-fullscreen' content='yes'>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta content="fullscreen=yes,preventMove=no" name="ML-Config">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no,email=no,address=no" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+	<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<script src="../../script/public/flexible.js" type="text/javascript" charset="utf-8"></script>
+	
+</head>
+<body ontouchstart>
+
+	
+	<!-- header -->
+	<div class="header">
+		详细信息
+	</div>
+	<!-- header -->
+		<!-- banner -->
+	<div class="swiper-container">
+	  <div class="swiper-wrapper">
+	    <div class="swiper-slide"><img src="../images/banner.jpg" alt=""></div>
+	  </div>
+	</div>
+	<!-- banner -->
+		<!-- index search -->
+	<div class="index-search">
+		<div class="input">
+			<i class="iconfont icon-sousuo"></i>
+			<input type="search" placeholder="请输入关键词">
+		</div>
+		<div class="searchschool">搜学校</div>
+		<div class="searchmajor">搜专业</div>
+	</div>
+	<!-- index search -->
+	
+	<!-- gird -->
+	<div class="gird">
+		<div class="title">湖南城建职业技术学院丨公办</div>
+		<table class="table">
+			<tr>
+				<td width="50%">地址：长沙市岳麓区</td>
+				<td colspan="2" width="50%">往年高考抛档线：420</td>
+			</tr>
+			<tr><td>机考+面试+职业测试</td><td colspan="2">考试时间：04/14~04/15</td></tr>
+			<tr><td>专业名称</td><td>专业名称</td><td>学费</td></tr>
+			<tr><td>机械工程设计</td><td>50</td><td>4200</td></tr>
+			<tr><td>信息工程设计</td><td>50</td><td>4200</td></tr>
+			<tr><td>艺术设计</td><td>50</td><td>4200</td></tr>
+			<tr><td>电子商务</td><td>50</td><td>4200</td></tr>
+			<tr><td>计算机管理</td><td>50</td><td>4200</td></tr>
+			<tr><td>工商管理</td><td>50</td><td>4200</td></tr>
+			<tr><td>行政管理</td><td>50</td><td>4200</td></tr>
+		</table>
+	</div>
+	<!-- gird -->
+	
+	<!-- link -->
+	<div class="link">
+		<a href="">招生简章</a>
+		<a href="alumni.html" class="blue">校友QQ群</a>
+	</div>
+	<!-- link -->
+<script src="../../script/public/jquery.min.js"></script>
+</body>
+</html>
+<script>
+  indexSearch()
+  function indexSearch(){
+	  $(".searchschool").on("touchend",function(e){
+		  const vaule = $(this).siblings(".input").find('input').val()
+		  alert(vaule)
+	  })
+	  $(".searchmajor").on("touchend",function(e){
+		  const vaule = $(this).siblings(".input").find('input').val()
+		  alert(vaule)
+	  })
+  }
+</script>	
