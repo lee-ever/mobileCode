@@ -10,52 +10,52 @@ var gulp = require('gulp'),
 
 
 gulp.task('ejs', function() {
-	gulp.src('./src/single/ejs/**')
+	gulp.src('./src/signup/ejs/**')
 		.pipe(plumber())
 		.pipe(ejs({},{},{ext: '.html'}))
-		.pipe(gulp.dest('./dist/single/html/'));
+		.pipe(gulp.dest('./dist/signup/html/'));
 });
 
 gulp.task('compass', function() {
-	return gulp.src('./src/single/sass/**/*.scss')
+	return gulp.src('./src/signup/sass/**/*.scss')
 		.pipe(sass({
 			outputStyle: 'compressed'
 		}).on('error', sass.logError))
 		.pipe(plumber())
-		.pipe(gulp.dest('./dist/single/css/'))
+		.pipe(gulp.dest('./dist/signup/css/'))
 		.pipe(reload({
 			stream: true
 		}))
 });
 
 gulp.task('testImagemin', function() {
-	gulp.src('./src/single/images/*.{png,jpg,gif,ico}')
+	gulp.src('./src/signup/images/*.{png,jpg,gif,ico}')
 		.pipe(imagemin())
-		.pipe(gulp.dest('./dist/single/images/'));
+		.pipe(gulp.dest('./dist/signup/images/'));
 });
 gulp.task('jsmin', function() {
-    gulp.src('./src/single/script/*.js')
+    gulp.src('./src/signup/script/*.js')
         .pipe(uglify())
-        .pipe(gulp.dest('./dist/single/script/'))
+        .pipe(gulp.dest('./dist/signup/script/'))
 })
 
 gulp.task('browserSync', function() {
 	var files = [
-		'./dist/single/css/**',
-		"./src/single/ejs/**",
-		"./src/single/script/**",
+		'./dist/signup/css/**',
+		"./src/signup/ejs/**",
+		"./src/signup/script/**",
 	];
 	browserSync.init(files, {
 		server: {
-			baseDir: "./dist/single/"
+			baseDir: "./dist/signup/"
 		}
 	});
 });
 
 gulp.task('default', function() {
 	gulp.start(["compass", "ejs", "browserSync", "testImagemin", "jsmin"]);
-	gulp.watch(["src/single/ejs/**"], ["ejs"]);
-	gulp.watch(["src/single/sass/**"], ["compass"]);
-	gulp.watch(["src/single/img/**"], ["testImagemin"]);
-	gulp.watch(['src/single/script/**'],['jsmin']);
+	gulp.watch(["src/signup/ejs/**"], ["ejs"]);
+	gulp.watch(["src/signup/sass/**"], ["compass"]);
+	gulp.watch(["src/signup/img/**"], ["testImagemin"]);
+	gulp.watch(['src/signup/script/**'],['jsmin']);
 });
