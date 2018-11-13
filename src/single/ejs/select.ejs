@@ -1,0 +1,49 @@
+<% include component/top %>
+	
+	<!-- header -->
+	<div class="header">
+		选择省份
+	</div>
+	<!-- header -->
+	
+	<!-- search -->
+	<div class="search">
+		<i class="iconfont icon-sousuo"></i>
+		<input type="search" placeholder="搜索">
+	</div>
+	<!-- search -->
+	
+	<!-- searchList -->
+	<div class="search-list">
+		<ul>
+			<li>湖南省</li>
+			<li>北京市</li>
+			<li>天津市</li>
+			<li>河北省</li>
+			<li>陕西省</li>
+		</ul>
+	</div>
+	<!-- searchList -->
+
+<% include component/bottom %>
+<script>
+	search();
+	listName();
+	function search(){
+		$(".search").on('keypress',function(e){
+			const keycode = e.keyCode;
+			const searchName = $(this).find('input').val();
+			if(keycode=='13') {  
+				e.preventDefault();
+				//请求搜索接口
+				alert(searchName)
+			}
+		})
+	}
+	function listName(){
+		$(".search-list ul li").on('touchend',function(e){
+			var text = e.currentTarget.innerText
+			console.log(text)
+		})
+	}
+</script>	
