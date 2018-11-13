@@ -1,0 +1,356 @@
+var position = [{
+	jiid: 1,
+	jname: "销售/客服/市场",
+	pjiid: 0,
+	status: 1
+}, {
+	jiid: 2,
+	jname: "财务/人力资源/行政",
+	pjiid: 0,
+	status: 1
+}, {
+	jiid: 3,
+	jname: "IT/互联网/移动互联网/电子商务/通信",
+	pjiid: 0,
+	status: 1
+}, {
+	jiid: 4,
+	jname: "房产/建筑/物业管理",
+	pjiid: 0,
+	status: 1
+}, {
+	jiid: 5,
+	jname: "金融",
+	pjiid: 0,
+	status: 1
+}, {
+	jiid: 6,
+	jname: "采购/贸易/交通运输/物流",
+	pjiid: 0,
+	status: 1
+}, {
+	jiid: 7,
+	jname: "生产/制造",
+	pjiid: 0,
+	status: 1
+}, {
+	jiid: 8,
+	jname: "传媒/印刷/艺术/设计",
+	pjiid: 0,
+	status: 1
+}, {
+	jiid: 9,
+	jname: "咨询/法律/教育/翻译",
+	pjiid: 0,
+	status: 1
+}, {
+	jiid: 10,
+	jname: "服务业",
+	pjiid: 0,
+	status: 1
+}, {
+	jiid: 11,
+	jname: "能源/环保/农业/科研",
+	pjiid: 0,
+	status: 1
+}, {
+	jiid: 12,
+	jname: "销售/业务人员",
+	pjiid: 1,
+	status: 1
+}, {
+	jiid: 13,
+	jname: "销售行政/商务/营销",
+	pjiid: 1,
+	status: 1
+}, {
+	jiid: 14,
+	jname: "客服",
+	pjiid: 1,
+	status: 1
+}, {
+	jiid: 15,
+	jname: "广告/会展",
+	pjiid: 1,
+	status: 1
+}, {
+	jiid: 16,
+	jname: "公关/媒介",
+	pjiid: 1,
+	status: 1
+}, {
+	jiid: 17,
+	jname: "财务/审计/税务",
+	pjiid: 2,
+	status: 1
+}, {
+	jiid: 18,
+	jname: "人力资源",
+	pjiid: 2,
+	status: 1
+}, {
+	jiid: 19,
+	jname: "行政/后勤/助理",
+	pjiid: 2,
+	status: 1
+}, {
+	jiid: 20,
+	jname: "管培生",
+	pjiid: 2,
+	status: 1
+}, {
+	jiid: 21,
+	jname: "网站/软件技术类",
+	pjiid: 3,
+	status: 1
+}, {
+	jiid: 22,
+	jname: "用户需求/设计类",
+	pjiid: 3,
+	status: 1
+}, {
+	jiid: 23,
+	jname: "网站/软件运营类",
+	pjiid: 3,
+	status: 1
+}, {
+	jiid: 24,
+	jname: "通信技术开发及应用",
+	pjiid: 3,
+	status: 1
+}, {
+	jiid: 25,
+	jname: "硬件类",
+	pjiid: 3,
+	status: 1
+}, {
+	jiid: 26,
+	jname: "网游",
+	pjiid: 3,
+	status: 1
+}, {
+	jiid: 27,
+	jname: "建筑装潢/市政建设",
+	pjiid: 4,
+	status: 1
+}, {
+	jiid: 28,
+	jname: "房地产",
+	pjiid: 4,
+	status: 1
+}, {
+	jiid: 29,
+	jname: "物业管理",
+	pjiid: 4,
+	status: 1
+}, {
+	jiid: 30,
+	jname: "金融/证券/期货/投资",
+	pjiid: 5,
+	status: 1
+}, {
+	jiid: 31,
+	jname: "银行",
+	pjiid: 5,
+	status: 1
+}, {
+	jiid: 32,
+	jname: "保险",
+	pjiid: 5,
+	status: 1
+}, {
+	jiid: 33,
+	jname: "物流/仓储",
+	pjiid: 6,
+	status: 1
+}, {
+	jiid: 34,
+	jname: "采购/贸易",
+	pjiid: 6,
+	status: 1
+}, {
+	jiid: 35,
+	jname: "交通运输",
+	pjiid: 6,
+	status: 1
+}, {
+	jiid: 36,
+	jname: "生产/营运",
+	pjiid: 7,
+	status: 1
+}, {
+	jiid: 37,
+	jname: "质量管理/安全防护",
+	pjiid: 7,
+	status: 1
+}, {
+	jiid: 38,
+	jname: "服装/纺织/皮革",
+	pjiid: 7,
+	status: 1
+}, {
+	jiid: 39,
+	jname: "汽车制造/服务",
+	pjiid: 7,
+	status: 1
+}, {
+	jiid: 40,
+	jname: "工程/机械",
+	pjiid: 7,
+	status: 1
+}, {
+	jiid: 41,
+	jname: "生物/制药/医疗器械",
+	pjiid: 7,
+	status: 1
+}, {
+	jiid: 42,
+	jname: "化工",
+	pjiid: 7,
+	status: 1
+}, {
+	jiid: 43,
+	jname: "技工",
+	pjiid: 7,
+	status: 1
+}, {
+	jiid: 44,
+	jname: "电子/电器/半导体/仪器/仪表",
+	pjiid: 7,
+	status: 1
+}, {
+	jiid: 45,
+	jname: "影视/媒体",
+	pjiid: 8,
+	status: 1
+}, {
+	jiid: 46,
+	jname: "艺术/设计",
+	pjiid: 8,
+	status: 1
+}, {
+	jiid: 47,
+	jname: "写作/出版/印刷",
+	pjiid: 8,
+	status: 1
+}, {
+	jiid: 48,
+	jname: "咨询/顾问",
+	pjiid: 9,
+	status: 1
+}, {
+	jiid: 49,
+	jname: "律师/法务/合规",
+	pjiid: 9,
+	status: 1
+}, {
+	jiid: 50,
+	jname: "教育/培训",
+	pjiid: 9,
+	status: 1
+}, {
+	jiid: 51,
+	jname: "翻译",
+	pjiid: 9,
+	status: 1
+}, {
+	jiid: 52,
+	jname: "餐饮/娱乐",
+	pjiid: 10,
+	status: 1
+}, {
+	jiid: 53,
+	jname: "酒店/旅游",
+	pjiid: 10,
+	status: 1
+}, {
+	jiid: 54,
+	jname: "美容/健身/体育",
+	pjiid: 10,
+	status: 1
+}, {
+	jiid: 55,
+	jname: "百货/连锁/零售",
+	pjiid: 10,
+	status: 1
+}, {
+	jiid: 56,
+	jname: "保安/家政/其他服务",
+	pjiid: 10,
+	status: 1
+}, {
+	jiid: 57,
+	jname: "医院/医疗/护理",
+	pjiid: 10,
+	status: 1
+}, {
+	jiid: 58,
+	jname: "能源/矿产/地质勘察",
+	pjiid: 11,
+	status: 1
+}, {
+	jiid: 59,
+	jname: "环境科学/环保",
+	pjiid: 11,
+	status: 1
+}, {
+	jiid: 60,
+	jname: "农/林/牧/渔",
+	pjiid: 11,
+	status: 1
+}, {
+	jiid: 61,
+	jname: "公务员/事业单位/科研机构",
+	pjiid: 11,
+	status: 1
+}, {
+	jiid: 62,
+	jname: "测试三级职位",
+	pjiid: 12,
+	status: 1
+}, {
+	jiid: 63,
+	jname: "测试三级职位",
+	pjiid: 12,
+	status: 1
+}, {
+	jiid: 64,
+	jname: "测试三级职位",
+	pjiid: 12,
+	status: 1
+}, {
+	jiid: 65,
+	jname: "测试三级职位",
+	pjiid: 12,
+	status: 1
+}, {
+	jiid: 66,
+	jname: "测试三级职位",
+	pjiid: 12,
+	status: 1
+}, {
+	jiid: 67,
+	jname: "测试三级职位",
+	pjiid: 12,
+	status: 1
+}, {
+	jiid: 68,
+	jname: "测试三级职位",
+	pjiid: 12,
+	status: 1
+}, {
+	jiid: 69,
+	jname: "测试三级职位",
+	pjiid: 12,
+	status: 1
+}, {
+	jiid: 70,
+	jname: "测试三级职位",
+	pjiid: 12,
+	status: 1
+}, {
+	jiid: 71,
+	jname: "测试三级职位",
+	pjiid: 12,
+	status: 1
+}];
