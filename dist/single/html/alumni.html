@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>单招</title>
+	<meta name='apple-touch-fullscreen' content='yes'>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta content="fullscreen=yes,preventMove=no" name="ML-Config">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no,email=no,address=no" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+	<link rel="stylesheet" href="../../css/iconfont/iconfont.css">
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<script src="../../script/public/flexible.js" type="text/javascript" charset="utf-8"></script>
+	
+</head>
+<body ontouchstart>
+
+	
+	<!-- header -->
+	<div class="header">
+		校友QQ群
+	</div>
+	<!-- header -->
+	<!-- index search -->
+	<div class="index-search alumni-select">
+		<div class="input">
+			<i class="iconfont icon-sousuo"></i>
+			<input type="search" placeholder="请输入关键词">
+		</div>
+		<div class="choose-province">
+			<a href="select.html">
+			<span>省份筛选</span>
+			<i class="iconfont icon-shaixuan1"></i>
+			</a>
+		</div>
+	</div>
+	<!-- index search -->
+	
+	<!-- alumni-list -->
+	<div class="mar_25">
+	<div class="alumni-list">
+		<!-- list -->
+		<div class="list">
+			<a href="http://wpa.qq.com/msgrd?v=3&uin=715509952&site=qq&menu=yes">
+				<p class="title">湖南城建职业技术学院</p>
+				<p class="subtitle">715509952</p>
+				<img src="../images/test.png" alt="">
+				<span>加入群聊</span>
+			</a>
+		</div>
+		<!-- list -->
+		<!-- list -->
+		<div class="list">
+			<a href="http://wpa.qq.com/msgrd?v=3&uin=715509952&site=qq&menu=yes">
+				<p class="title">湖南城建职业技术学院</p>
+				<p class="subtitle">715509952</p>
+				<img src="../images/test.png" alt="">
+				<span>加入群聊</span>
+			</a>
+		</div>
+		<!-- list -->
+		<!-- list -->
+		<div class="list">
+			<a href="http://wpa.qq.com/msgrd?v=3&uin=715509952&site=qq&menu=yes">
+				<p class="title">湖南城建职业技术学院</p>
+				<p class="subtitle">715509952</p>
+				<img src="../images/test.png" alt="">
+				<span>加入群聊</span>
+			</a>
+		</div>
+		<!-- list -->
+		<!-- list -->
+		<div class="list">
+			<a href="http://wpa.qq.com/msgrd?v=3&uin=715509952&site=qq&menu=yes">
+				<p class="title">湖南城建职业技术学院</p>
+				<p class="subtitle">715509952</p>
+				<img src="../images/test.png" alt="">
+				<span>加入群聊</span>
+			</a>
+		</div>
+		<!-- list -->
+	</div>
+	</div>
+	<!-- alumni-list -->
+<script src="../../script/public/jquery.min.js"></script>
+</body>
+</html>
+<script>
+	search();
+	function search(){
+		$(".alumni-select").on('keypress',function(e){
+			const keycode = e.keyCode;
+			const searchName = $(this).find('input').val();
+			if(keycode=='13') {  
+				e.preventDefault();
+				//请求搜索接口
+				alert(searchName)
+			}
+		})
+	}
+</script>	

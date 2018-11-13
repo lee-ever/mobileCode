@@ -31,6 +31,15 @@
 	}
 	.searchmajor{ background: #fb9d45;}
 }
+.alumni-select{
+	.input{ width: rem(475);
+		input{width:rem(400);}
+	}
+	.choose-province{ 
+		a{color:#3d87e9;}
+	}
+}
+
 
 .index-nav{ display:flex; justify-content: space-around; padding: rem(20) 0; background: #fff;
 	.nav{
@@ -72,4 +81,47 @@
 	&:active{
 		opacity: 0.8;
 	}
+}
+
+.question-list{background: #fff; padding: rem(20) rem(30); margin-top: rem(25);
+	a{
+		.imgtext{width:100%; display: flex;
+			img{ width:rem(140); height: rem(140); border: 1px solid #bbb;}
+			.content{padding-left: rem(20);line-height: rem(35);min-width: 0; flex: 1;
+				.title{font-size: rem(32); color: #000; margin-bottom: rem(10);display:-webkit-box;overflow:hidden;text-overflow:ellipsis;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+				.subtitle{ font-size: rem(26); color: #4e4e4e; display: block;}
+			}
+		}
+	}
+}
+.gird{ background: #fff; padding: rem(30);
+	.title{ font-size: rem(32); padding-bottom: rem(20);}
+}
+.table{ display: table; width: 100%; border: 1px solid #d8d8d8;
+	tr{height: rem(75); border-bottom: 1px solid #d8d8d8;
+		td{ text-align: center;border-right: 1px solid #d8d8d8;font-size: rem(28);}
+	}
+}
+.link{display:flex; margin-top: rem(25);
+	a{ background: #fb9d45; font-size: rem(36); color: #fff; height: rem(88); line-height: rem(88); text-align: center; width: 50%;
+		&:active{ opacity: 0.8;}
+	}
+	.width_100{ width: 100%;}
+	.blue{ background: #3d87e9;}
+}
+.mar_25{ margin: rem(25);}
+.alumni-list{width: 100%; display: flex; justify-content: space-between; flex-wrap: wrap;
+	.list{ padding: rem(25); background: #fff; box-shadow:0 rem(4) rem(10) #bbb; text-align:center; width:48%; box-sizing:border-box; margin-bottom:rem(20);
+		p{margin: 0;}
+		.title{ font-size: rem(28); color: #000;}
+		.subtitle{ font-size: rem(26); color: #3d87e9; margin: rem(20) 0 rem(10) 0;}
+		img{ width: rem(280); height: rem(280);}
+		span{ width: 100%; height: rem(64); line-height: rem(64); color: #fff;background: #3D87E9;font-size: rem(26); display: inline-block;margin-top: rem(10);border-radius: rem(10);}
+	}
+}
+
+.test{ display: flex; justify-content: space-between;width: 100%;flex-wrap: wrap;
+	.test1{ width: 50%; height: rem(100); background:#029209; white-space: nowrap;}
+	.test1:nth-child(2){ background: #34BDC4;}
+	
 }

@@ -1,0 +1,60 @@
+<% include component/top %>
+	
+	<!-- header -->
+	<div class="header">
+		详细信息
+	</div>
+	<!-- header -->
+	<% include component/banner %>
+	<% include component/search %>
+	
+	<!-- gird -->
+	<div class="gird">
+		<div class="title">机械工程设计</div>
+		<table class="table">
+			<tr>
+				<td colspan="4">专业介绍文字，专业介绍文字，专业介绍文字，专业介绍
+文字，专业介绍文字，专业介绍文字，专业介绍文字，专
+业介绍文字，专业介绍文字</td>
+			</tr>
+			<tr>
+				<td width="35%">学校名称</td>
+				<td width="20%">招生人数</td>
+				<td width="15%">学费</td>
+				<td width="30%">考试时间<br>录取规则</td>
+			</tr>
+			<tr>
+				<td>湖南城建职业技术学院</td>
+				<td>50</td>
+				<td>4200</td>
+				<td>04/15~04/19机考+面试</td>
+			</tr>
+			<tr>
+				<td>湖南城建职业技术学院</td>
+				<td>50</td>
+				<td>4200</td>
+				<td>04/15~04/19机考+面试</td>
+			</tr>
+		</table>
+	</div>
+	<!-- gird -->
+	
+	<!-- link -->
+	<div class="link">
+		<a href="alumni.html" class="blue width_100">校友QQ群</a>
+	</div>
+	<!-- link -->
+<% include component/bottom %>
+<script>
+  indexSearch()
+  function indexSearch(){
+	  $(".searchschool").on("touchend",function(e){
+		  const vaule = $(this).siblings(".input").find('input').val()
+		  alert(vaule)
+	  })
+	  $(".searchmajor").on("touchend",function(e){
+		  const vaule = $(this).siblings(".input").find('input').val()
+		  alert(vaule)
+	  })
+  }
+</script>	
