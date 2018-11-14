@@ -119,9 +119,3 @@
 		span{ width: 100%; height: rem(64); line-height: rem(64); color: #fff;background: #3D87E9;font-size: rem(26); display: inline-block;margin-top: rem(10);border-radius: rem(10);}
 	}
 }
-
-.test{ display: flex; justify-content: space-between;width: 100%;flex-wrap: wrap;
-	.test1{ width: 50%; height: rem(100); background:#029209; white-space: nowrap;}
-	.test1:nth-child(2){ background: #34BDC4;}
-	
-}

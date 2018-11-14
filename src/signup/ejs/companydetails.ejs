@@ -1,0 +1,121 @@
+	<% include component/top %>
+	<!-- header -->
+	<div class="header">
+		详细信息
+	</div>
+	<!-- header -->
+	<% include component/banner %>
+	<div class="takeat">
+		<span class="actived" data-id="gz">工资福利</span>
+		<span data-id="gw">岗位说明</span>
+		<span data-id="qy">企业介绍</span>
+	</div>
+	<!-- gird -->
+	<div class="gird">
+		<div class="clear"></div>
+		<div class="title" id="gz">工资福利</div>
+		<div class="subtitle"><em></em>我能挣多少</div>
+		<table class="table">
+			<tr>
+				<td width="30%">综合工资</td>
+				<td width="70%">1500-29292元每月</td>
+			</tr>
+			<tr>
+				<td width="30%">计件工资</td>
+				<td width="70%">20元每件</td>
+			</tr>
+			<tr>
+				<td width="30%">发薪安排</td>
+				<td width="70%">每月281号发放工资</td>
+			</tr>
+		</table>
+		<div class="subtitle"><em></em>我能享受的福利待遇</div>
+		<table class="table">
+			<tr>
+				<td width="30%">综合工资</td>
+				<td width="70%">1500-29292元每月</td>
+			</tr>
+			<tr>
+				<td width="30%">计件工资</td>
+				<td width="70%">20元每件</td>
+			</tr>
+			<tr>
+				<td width="30%">发薪安排</td>
+				<td width="70%">每月281号发放工资</td>
+			</tr>
+		</table>
+		<div class="title" id="gw">岗位说明</div>
+		<div class="subtitle"><em></em>我需要做什么</div>
+		<table class="table">
+			<tr>
+				<td width="30%">工作内容</td>
+				<td width="70%">1500-29292元每月</td>
+			</tr>
+			<tr>
+				<td width="30%">工作时间</td>
+				<td width="70%">20元每件</td>
+			</tr>
+			<tr>
+				<td width="30%">工作方式</td>
+				<td width="70%">每月281号发放工资</td>
+			</tr>
+		</table>
+		<div class="subtitle"><em></em>录用条件</div>
+		<table class="table">
+			<tr>
+				<td width="30%">年龄</td>
+				<td width="70%">1500-29292元每月</td>
+			</tr>
+			<tr>
+				<td width="30%">学历要求</td>
+				<td width="70%">20元每件</td>
+			</tr>
+			<tr>
+				<td width="30%">性别要求</td>
+				<td width="70%">每月281号发放工资</td>
+			</tr>
+			<tr>
+				<td width="30%">其他条件</td>
+				<td width="70%">吃苦耐劳服从管理</td>
+			</tr>
+		</table>
+		<div class="title" id="qy">企业介绍</div>
+		<div class="subtitle"><em></em>企业简介</div>
+		<table class="table">
+			<tr>
+				<td width="30%">企业名称</td>
+				<td width="70%">好前途网络科技有限公司</td>
+			</tr>
+			<tr>
+				<td width="30%">企业地址</td>
+				<td width="70%">湖南省长沙市</td>
+			</tr>
+			<tr>
+				<td width="30%">联系电话</td>
+				<td width="70%">0731-8888888</td>
+			</tr>
+			<tr>
+				<td  colspan="2"><img src="../images/test.png" alt=""></td>
+			</tr>
+		</table>
+	</div>
+	<!-- gird -->
+	
+	<!-- link -->
+	<div class="link">
+		<a href="http://wpa.qq.com/msgrd?v=3&uin=715509952&site=qq&menu=yes">咨询客服</a>
+		<a href="apply.html" class="blue">免费报名</a>
+	</div>
+	<!-- link -->
+<% include component/bottom %>
+<script src="../script/swiper.min.js"></script>
+<script>
+const mySwiper = new Swiper('.swiper-container',{loop: false,autoplay:false,});
+$(".takeat").on("touchend",'span',function(){
+	const atid = $(this).attr("data-id")
+	$(this).addClass("actived").siblings().removeClass("actived")
+	$('html,body').animate({
+		scrollTop: ($('#'+ atid).offset().top)
+	},1000);
+})
+</script>	
