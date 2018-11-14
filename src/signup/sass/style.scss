@@ -135,9 +135,14 @@
 	.link{margin-top:0;}
 }
 .toolbar, .toolbar .title{ font-size: rem(36);}
+.weui-cells{ margin-top: 0;}
 .weui-picker-modal .picker-items{ font-size: rem(32);}
 i.icon.icon-next, i.icon.icon-prev{ width: rem(30);}
 .picker-calendar-month-picker a.icon-only, .picker-calendar-year-picker a.icon-only{text-align: center;justify-content: center;align-items: center;}
 .weui-cell.bottom .weui-cell__bd:after{ width: 100%;}
 .weui-cell.bottom .weui-cell__bd input::-webkit-input-placeholder{ color: #f60;} 
 .weui-cell .weui-cell__bd:after{ position: absolute; bottom: 0; width: 0; height: 1px; background: #f60; content: "";transition: all ease .6s;}
+
+.flowdetails{ padding: rem(30); font-size: rem(28); line-height: rem(48);
+	img{ max-width: 99%;}
+}
